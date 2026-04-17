@@ -28,6 +28,8 @@ do
 		
 		LocalPlayer:Kick(Message)
 	else
+		loadText:setText("Anti-Adonis cooldown...")
+		task.wait(1)
 		loadText:setText("Anti-Adonis loaded successfully!")
 		loadText:setColor3(Color3.new(0, 1, 0))
 	end
