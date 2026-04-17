@@ -1,7 +1,7 @@
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
 
-local customPrint = loadstring(game:HttpGet("https://raw.githubusercontent.com/uken2525v3/UniversalUken/refs/heads/main/custom_print.lua"))()
+local customPrint = loadstring(game:HttpGet("https://github.com/uken2525v3/UniversalUken/raw/refs/heads/main/custom_print.lua"))()
 local loadText = customPrint.new("-")
 
 do
