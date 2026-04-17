@@ -29,7 +29,14 @@ do
 		LocalPlayer:Kick(Message)
 	else
 		loadText:setText("Anti-Adonis cooldown...")
-		task.wait(1)
+		
+		for i = 1, 100 do
+			local maxBar = 10
+			local bar = math.floor(i / 100 * maxBar)
+			loadText:setText(`Anti-Adonis cooldown [{string.rep("#", bar)}/{string.rep(" ", maxBar - bar)}]`)
+			task.wait(1 / 100)
+		end
+		
 		loadText:setText("Anti-Adonis loaded successfully!")
 		loadText:setColor3(Color3.new(0, 1, 0))
 	end
